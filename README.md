@@ -34,8 +34,7 @@ bash chip_set1.sh
 ```
 ## output
 
-(1) ./trim: trimmed and discarded fastq files adn the trim log; 
-(2) ./QC: fastqc output for quality check of the fastq files;
+(1) ./trim: trimmed and discarded fastq files adn the trim log;                                                              (2) ./QC: fastqc output for quality check of the fastq files;
 (3) ./bam: all the processed sam and bam files; the filename with "rm" means remove mitochondrial alingment which means they are the final files that would be used for peak calling.
 
 
