@@ -29,9 +29,11 @@ https://www.htslib.org
 
 
 ### Run step 1
+
 ```
-bash chip_set1.sh
+bash Chip_step1.sh
 ```
+
 ## output
 
 (1) ./trim: trimmed and discarded fastq files adn the trim log;                                                              
