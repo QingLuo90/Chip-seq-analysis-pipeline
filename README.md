@@ -1,4 +1,4 @@
-Bulk chip-seq data analyzing pipeline
+# Bulk chip-seq data analyzing pipeline
 
 Here is the codes for Chip-seq analyzing pipeline
 
@@ -6,7 +6,7 @@ Here is the codes for Chip-seq analyzing pipeline
 bash chip_step1.sh
 
 
-Step 1 involvels the following softwares:
+## Step 1 involvels the following softwares:
 
 (1) sratoolkit: download the SRA files in batch and convert them into fastq files;
     https://www.ncbi.nlm.nih.gov/books/NBK158900/
