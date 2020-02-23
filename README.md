@@ -3,7 +3,10 @@
 Here is the codes for Chip-seq analyzing pipeline
 
 
+```
 bash chip_step1.sh
+```
+
 
 
 ## Step 1 involvels the following softwares:
