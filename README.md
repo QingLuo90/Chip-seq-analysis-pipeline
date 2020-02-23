@@ -1,15 +1,14 @@
+
 # Bulk chip-seq data analyzing pipeline
 
 Here is the codes for Chip-seq analyzing pipeline
 
 
-```
-bash chip_step1.sh
-```
+## Run step 1
 
+In step 1 includes dowloanding batch sra files from NCBI and convert them into fastq files; And then analyze 
 
-
-## Step 1 involvels the following softwares:
+### Prerequisites
 
 (1) sratoolkit: download the SRA files in batch and convert them into fastq files;
     https://www.ncbi.nlm.nih.gov/books/NBK158900/
@@ -26,6 +25,37 @@ bash chip_step1.sh
 (5) Samtools: manipulate sam and bam files, including sam2bam conversion, sort and index;
 
 (6) Picard: remove duplicates
+
+
+### Run step 1
+
+```
+bash chip_set1.sh
+```
+
+
+
+## output
+
+(1) ./trim: trimmed and discarded fastq files adn the trim log;
+(2) ./QC: fastqc output for quality check of the fastq files;
+(2) ./bam: all the processed sam and bam files; the filename with "rm" means remove mitochondrial alingment which means they are the final files that would be used for peak calling.
+
+
+
+
+
+
+
+
+```
+bash chip_step1.sh
+```
+
+
+
+## Step 1 involvels the following softwares:
+
 
  
 
