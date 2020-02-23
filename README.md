@@ -4,9 +4,9 @@
 Here is the codes for Chip-seq analyzing pipeline
 
 
-## Run step 1
+## Step 1
 
-In step 1 includes dowloanding batch sra files from NCBI and convert them into fastq files; And then analyze 
+step 1 includes dowloanding a batch of sra files from NCBI; converting them into fastq files; running quality control; mapping, removing duplicates and mitochondial alignments.
 
 ### Prerequisites
 
@@ -23,18 +23,15 @@ In step 1 includes dowloanding batch sra files from NCBI and convert them into f
     http://bowtie-bio.sourceforge.net/bowtie2/index.shtml
     
 (5) Samtools: manipulate sam and bam files, including sam2bam conversion, sort and index;
+https://www.htslib.org
 
-(6) Picard: remove duplicates
+(6) Picard: remove duplicates; https://broadinstitute.github.io/picard/
 
 
 ### Run step 1
-
 ```
 bash chip_set1.sh
 ```
-
-
-
 ## output
 
 (1) ./trim: trimmed and discarded fastq files adn the trim log;
@@ -47,14 +44,6 @@ bash chip_set1.sh
 
 
 
-
-```
-bash chip_step1.sh
-```
-
-
-
-## Step 1 involvels the following softwares:
 
 
  
