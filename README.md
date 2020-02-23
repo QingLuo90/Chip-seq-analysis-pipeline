@@ -5,7 +5,7 @@ Here is the codes for Chip-seq analyzing pipeline
 
 
 
-## 1 Pre-processing.sh
+## 1 Pre-processing
 
 Pre-processing.sh includes dowloanding a batch of sra files from NCBI; converting them into fastq files; running quality control; mapping, removing duplicates and mitochondial alignments.
 
@@ -44,7 +44,7 @@ bash Chip_step1.sh
 
 
 
-## 2 Peak_calling.sh
+## 2 Peak calling
 
 Peak_calling.sh call peaks with the "rm" named bam files in last step.
 
@@ -66,7 +66,7 @@ bash Peak_calling.sh
 
 
 
-## 3 Generating_bw.sh
+## 3 Generate bigwig files
 
 Generating_bw.sh is to gnerate bigwig files for visulization in tools like IGV. 
 
