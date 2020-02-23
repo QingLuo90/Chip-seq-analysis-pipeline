@@ -4,9 +4,9 @@
 Here is the codes for Chip-seq analyzing pipeline
 
 
-## Step 1
+## Pre-processing.sh
 
-Step 1 includes dowloanding a batch of sra files from NCBI; converting them into fastq files; running quality control; mapping, removing duplicates and mitochondial alignments.
+Pre-processing.sh includes dowloanding a batch of sra files from NCBI; converting them into fastq files; running quality control; mapping, removing duplicates and mitochondial alignments.
 
 ### Prerequisites
 
@@ -28,7 +28,7 @@ https://www.htslib.org
 (6) Picard: remove duplicates; https://broadinstitute.github.io/picard/
 
 
-### Run step 1
+### Run pre-processing
 
 ```
 bash Chip_step1.sh
@@ -46,7 +46,49 @@ bash Chip_step1.sh
 
 
 
+## Peak_calling.sh
 
+Peak_calling.sh call peaks with the "rm" named bam files in last step.
+
+### Prerequisites
+
+macs2: call peaks for chip-seq
+https://github.com/taoliu/MACS
+
+
+
+### Run peak calling
+
+```
+bash Peak_calling.sh
+```
+
+## output
+
+./macs: output of macs2 including peak file and pile up files, which will be used in generating bigwig file                                                              
+
+
+
+## Generating_bw.sh
+
+Generating_bw.sh is to gnerate bigwig files for visulization in tools like IGV. 
+
+### Prerequisites
+
+macs2: call peaks for chip-seq
+https://github.com/taoliu/MACS
+
+
+
+### Run Generating_bw
+
+```
+bash Generating_bw.sh
+```
+
+## output
+
+./BigWig: bigwig files that are ready for signal track visulization
 
 
 
