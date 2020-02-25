@@ -11,8 +11,8 @@ Pre-processing.sh includes dowloanding a batch of sra files from NCBI; convertin
 
 ### 1.1 Prerequisites
 
-(1) sratoolkit: download the SRA files in batch and convert them into fastq files;
-    https://www.ncbi.nlm.nih.gov/books/NBK158900/
+(1) [sratoolkit](https://www.ncbi.nlm.nih.gov/books/NBK158900/): download the SRA files in batch and convert them into fastq files;
+    
     
 (2) Trimmomatic: trim adpator and low quality bases;
     http://www.usadellab.org/cms/?page=trimmomatic
