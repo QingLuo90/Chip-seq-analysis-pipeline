@@ -56,11 +56,16 @@ Peak_calling.sh call peaks with the "rm" named bam files in last step.
 ### 2.2 Run the script for peak calling
 
 ```
-bash Peak_calling.sh
+sort srrList | parallel --jobs 5 macs2 \
+callpeak -t ./trim/{}.fq.gz.sam.bam_sorted.bam_rd.bam_rm.bam \
+-c ./trim/input.fq.gz.sam.bam_sorted.bam_rd.bam_rm.bam \
+-f BAM -p 0.01 -g mm --outdir \
+./macs --nomodel -n {} --keep-dup all -B --extsize 147 
+
 ```
 ## 2.3 output
 
-./macs: output of macs2 including peak file and pile up files, which will be used in generating bigwig file                                                              
+./macs: peak file and pile up files, which will be used in generating bigwig file                                                              
 
 
 
