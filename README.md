@@ -56,7 +56,7 @@ Peak_calling.sh call peaks with the "rm" named bam files in last step.
 ### 2.2 Run the script for peak calling
 
 ```
-sort srrList | parallel --jobs 5 macs2 \
+sort List | parallel --jobs 5 macs2 \
 callpeak -t ./trim/{}.fq.gz.sam.bam_sorted.bam_rd.bam_rm.bam \
 -c ./trim/input.fq.gz.sam.bam_sorted.bam_rd.bam_rm.bam \
 -f BAM -p 0.01 -g mm --outdir \
