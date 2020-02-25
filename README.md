@@ -11,22 +11,22 @@ Pre-processing.sh includes dowloanding a batch of sra files from NCBI; convertin
 
 ### 1.1 Prerequisites
 
-(1) [sratoolkit](https://www.ncbi.nlm.nih.gov/books/NBK158900/): download the SRA files in batch and convert them into fastq files;
+(1) [Sratoolkit](https://www.ncbi.nlm.nih.gov/books/NBK158900/): download the SRA files in batch and convert them into fastq files;
     
     
-(2) Trimmomatic: trim adpator and low quality bases;
-    http://www.usadellab.org/cms/?page=trimmomatic
+(2) [Trimmomatic](http://www.usadellab.org/cms/?page=trimmomatic): trim adpator and low quality bases;
+    
 
-(3) Fastqc: quality control of the trimmed fastq files;
-    https://www.bioinformatics.babraham.ac.uk/projects/fastqc/
+(3) [Fastqc](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/): quality control of the trimmed fastq files;
+  
  
-(4) Bowtie2: mapping the reads to the reference genome;
-    http://bowtie-bio.sourceforge.net/bowtie2/index.shtml
+(4) [Bowtie2] (http://bowtie-bio.sourceforge.net/bowtie2/index.shtml): mapping the reads to the reference genome;
     
-(5) Samtools: manipulate sam and bam files, including sam2bam conversion, sort and index;
-https://www.htslib.org
+    
+(5) [Samtools] (https://www.htslib.org): manipulate sam and bam files, including sam2bam conversion, sort and index;
 
-(6) Picard: remove duplicates; https://broadinstitute.github.io/picard/
+
+(6) [Picard] (https://broadinstitute.github.io/picard/): remove duplicates; 
 
 ### 1.2 Run pre-processing
 ```
@@ -50,8 +50,8 @@ Peak_calling.sh call peaks with the "rm" named bam files in last step.
 
 ### 2.1 Prerequisites
 
-macs2: call peaks for chip-seq
-https://github.com/taoliu/MACS
+[Macs2] (https://github.com/taoliu/MACS): call peaks for chip-seq
+
 
 ### 2.2 Run peak calling
 
