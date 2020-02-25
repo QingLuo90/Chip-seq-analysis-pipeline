@@ -78,7 +78,9 @@ Generating_bw.sh is to gnerate bigwig files for visulization in tools like IGV.
 ### 3.1 Prerequisites
 
 [MACS2](https://github.com/taoliu/MACS): pileup calculation
+
 [bedtoos](https://bedtools.readthedocs.io/en/latest/): convet bdg to bedgraph
+
 [UCSC tools bedGraphToBigWig](http://hgdownload.soe.ucsc.edu/admin/exe/linux.x86_64/): convert bedgraph to bigwig
 
 ### 3.2 Run Generating_bw
@@ -93,8 +95,11 @@ bash generating_bw.sh
 
 ## 4 Downstream analysis tools
 [Homer](http://homer.ucsd.edu/homer/index.html): differential peak calling, peak annotation, H3K27ac TF imprinting peak calling;
+
 [MACS2](https://github.com/taoliu/MACS): differential peak calling;
+
 [deepTools](https://deeptools.readthedocs.io/en/develop/):heatmap and profile plotting; compare bigwig similarity
+
 [ROSE](http://younglab.wi.mit.edu/super_enhancer_code.html):super-enhancer calling and annotation
  
 
