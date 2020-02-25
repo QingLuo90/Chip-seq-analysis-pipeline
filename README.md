@@ -50,7 +50,7 @@ Peak_calling.sh call peaks with the "rm" named bam files in last step.
 
 ### 2.1 Prerequisites
 
-[Macs2](https://github.com/taoliu/MACS): call peaks for chip-seq
+[MACS2](https://github.com/taoliu/MACS): call peaks for chip-seq
 
 
 ### 2.2 Run the script for peak calling
@@ -77,18 +77,24 @@ Generating_bw.sh is to gnerate bigwig files for visulization in tools like IGV.
 
 ### 3.1 Prerequisites
 
-macs2: call peaks for chip-seq
-https://github.com/taoliu/MACS
+[MACS2](https://github.com/taoliu/MACS): pileup calculation
+[bedtoos] (https://bedtools.readthedocs.io/en/latest/): convet bdg to bedgraph
+[UCSC tools bedGraphToBigWig](http://hgdownload.soe.ucsc.edu/admin/exe/linux.x86_64/): convert bedgraph to bigwig
+
 ### 3.2 Run Generating_bw
 
 ```
-bash Generating_bw.sh
+bash generating_bw.sh
 ```
-## 3.3 output
+### 3.3 output
 
 ./BigWig: bigwig files that are ready for signal track visulization
 
 
-
+## 4 Downstream analysis tools
+[Homer] (http://homer.ucsd.edu/homer/index.html): differential peak calling, peak annotation, H3K27ac TF imprinting peak calling;
+[MACS2](https://github.com/taoliu/MACS): differential peak calling;
+[deepTools](https://deeptools.readthedocs.io/en/develop/):heatmap and profile plotting; compare bigwig similarity
+[ROSE] (http://younglab.wi.mit.edu/super_enhancer_code.html):super-enhancer calling and annotation
  
 
