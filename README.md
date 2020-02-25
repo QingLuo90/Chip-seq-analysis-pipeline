@@ -28,7 +28,7 @@ Pre-processing.sh includes dowloanding a batch of sra files from NCBI; convertin
 
 (6) [Picard](https://broadinstitute.github.io/picard/): remove duplicates; 
 
-### 1.2 Run pre-processing
+### 1.2 Run the script for pre-processing
 ```
 bash Chip_step1.sh
 ```
@@ -53,7 +53,7 @@ Peak_calling.sh call peaks with the "rm" named bam files in last step.
 [Macs2](https://github.com/taoliu/MACS): call peaks for chip-seq
 
 
-### 2.2 Run peak calling
+### 2.2 Run the script for peak calling
 
 ```
 bash Peak_calling.sh
