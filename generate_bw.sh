@@ -10,4 +10,4 @@ bedtools sort -chrThenSizeA -i stdin \
 
 
 #turn bedgraph file in to biwgiw
-sort srrList3 | parallel --jobs 14 "bedGraphToBigWig ./BigWig/{}.bedgraph mm10.chrom.sizes ./BigWig/{}.bigwig"
+sort srrList | parallel --jobs 14 "bedGraphToBigWig ./BigWig/{}.bedgraph mm10.chrom.sizes ./BigWig/{}.bigwig"
